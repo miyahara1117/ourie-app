@@ -1,0 +1,43 @@
+name: ourie_app
+description: "A new Flutter project for Time Capsule Voice."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase関連
+  firebase_core: ^3.1.0
+  cloud_firestore: ^5.0.0
+
+  # 音声再生・マイク録音・権限管理
+  audioplayers: ^6.0.0
+  flutter_sound: ^9.2.13
+  permission_handler: ^11.3.1
+  path_provider: ^2.1.4
+  vibration: ^2.0.0
+
+  # ローカル通知用
+  flutter_local_notifications: ^17.0.0
+
+  # UI用アイコン
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "app_icon.png"
